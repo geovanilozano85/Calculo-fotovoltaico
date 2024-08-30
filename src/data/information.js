@@ -1,9 +1,9 @@
-import panel_Solar from "./assets/panel_Solar.png";
-import inversor from "./assets/inversor.png";
-import cableado from "./assets/cableado.png";
-import estructura from "./assets/estructura.png";
-import documento from "./assets/documento.png";
-import ingenieria from "./assets/ingenieria.png";
+import panel_Solar from "/public/assets/panel_Solar.png";
+import inversor from "/public/assets/inversor.png";
+import cableado from "/public/assets/cableado.png";
+import estructura from "/public/assets/estructura.png";
+import documento from "/public/assets/documento.png";
+import ingenieria from "/public/assets/ingenieria.png";
 
 export const information = [
   {
