@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media print {
+    /* Ajustes específicos para la impresión */
+    .print\:max-h-none {
+      max-height: none !important;
+    }
+
+    .description{
+        max-width: 5rem;
+    }
+  
+    .print\:overflow-visible {
+      overflow: visible !important;
+    }
+  
+    /* Asegúrate de que la tabla y sus contenedores no tengan restricciones de tamaño */
+    table {
+      width: 100% !important;
+      max-width: none !important;
+    }
+  
+    img {
+      max-width: 100% !important;
+      height: auto !important;
+    }
+  
+    /* Si el contenido es demasiado largo para una página, considera dividir las filas de la tabla en varias páginas */
+    tr {
+      page-break-inside: avoid;
+    }
+  
+    th,
+    td {
+      white-space: nowrap; /* Evitar que el texto se corte en la impresión */
+    }
+  }
+  
